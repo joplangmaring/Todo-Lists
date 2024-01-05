@@ -1,0 +1,115 @@
+.maincontainer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(24, 33, 24);
+}
+
+.app {
+  width: 350px;
+  height: 400px;
+  color: white;
+  left: 50%;
+  top: 45%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+ul {
+  padding: 0;
+}
+
+ul.pending{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 5px;
+  padding: 5px;
+  border: 1px white solid;
+  border-radius: 5px;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  margin-left: auto;
+  color: white;
+}
+
+.todos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 4px;
+}
+
+.todos > input[type="text"] {
+  border: 1px white solid;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+}
+
+#addtask {
+  border: 1px red solid;
+  width: 70px;
+  border-radius: 5px;
+  margin-left: 5px;
+  background: rgb(222, 66, 23);
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  border: 1px solid white;
+  background: transparent;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  position: relative;
+}
+
+input[type="checkbox"]:after {
+  content: "✔";
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]:checked {
+  background: transparent;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+h3 {
+  margin: 2;
+  margin-left: 4px;
+}
+
+.todo-item {
+  margin-left: 10px;
+}
